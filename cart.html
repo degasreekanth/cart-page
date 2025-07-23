@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Catalog</title>
+  <link rel="stylesheet" href="./product.css" />
+</head>
+
+<body>
+
+  <h1>Product Catalog</h1>
+
+  <div id="filterContainer" style="margin: 20px;">
+    <select id="sortPrice">
+      <option value="">Sort by Price</option>
+      <option value="low">Low to High</option>
+      <option value="high">High to Low</option>
+    </select>
+  </div>
+
+  <section class="catalog">
+    <article>
+      <img src="./Apple.jpg" width="200" alt="Apple" />
+      <h2 class="product-title">Apple</h2>
+      <p>Kashmir Apple</p>
+      <p><strong>Price:</strong> ₹110</p>
+      <p><strong>Availability:</strong> <span class="in-Stock">In Stock</span></p>
+      <button class="add-to-cart">Add to cart</button>
+    </article>
+
+    <article>
+      <img src="./banana.jpg" width="200" alt="Banana" />
+      <h2 class="product-title">Banana</h2>
+      <p>Dozen (12 pieces)</p>
+      <p><strong>Price:</strong> ₹60</p>
+      <p><strong>Availability:</strong> <span class="in-Stock">In Stock</span></p>
+      <button class="add-to-cart">Add to cart</button>
+    </article>
+
+    <article>
+      <img src="./guava.jpg" width="200" alt="Guava" />
+      <h2 class="product-title">Guava</h2>
+      <p>1 kg (approx 10-15)</p>
+      <p><strong>Price:</strong> ₹30</p>
+      <p><strong>Availability:</strong> <span class="in-Stock">In Stock</span></p>
+      <button class="add-to-cart">Add to cart</button>
+    </article>
+
+    <article>
+      <img src="./kiwi.jpg" width="200" alt="Kiwi" />
+      <h2 class="product-title">Kiwi</h2>
+      <p>3 fruits</p>
+      <p><strong>Price:</strong> ₹80</p>
+      <p><strong>Availability:</strong> <span class="in-Stock">In Stock</span></p>
+      <button class="add-to-cart">Add to cart</button>
+    </article>
+
+    <article>
+      <img src="./grapes.jpg" width="200" alt="Grapes" />
+      <h2 class="product-title">Grapes</h2>
+      <p>1 kg</p>
+      <p><strong>Price:</strong> ₹45</p>
+      <p><strong>Availability:</strong> <span class="in-Stock">In Stock</span></p>
+      <button class="add-to-cart">Add to cart</button>
+    </article>
+
+    <article>
+      <img src="./pineapple.jpg" width="200" alt="Pineapple" />
+      <h2 class="product-title">Pineapple</h2>
+      <p>1 (approx 500g)</p>
+      <p><strong>Price:</strong> ₹40</p>
+      <p><strong>Availability:</strong> <span class="in-Stock">In Stock</span></p>
+      <button class="add-to-cart">Add to cart</button>
+    </article>
+
+    <article>
+      <img src="./orange.jpg" width="200" alt="Orange" />
+      <h2 class="product-title">Orange</h2>
+      <p>500g</p>
+      <p><strong>Price:</strong> ₹90</p>
+      <p><strong>Availability:</strong> <span class="in-Stock">In Stock</span></p>
+      <button class="add-to-cart">Add to cart</button>
+    </article>
+
+    <article>
+      <img src="./dragon.jpg" width="200" alt="Dragon Fruit" />
+      <h2 class="product-title">Dragon Fruit</h2>
+      <p>1 (approx 350g)</p>
+      <p><strong>Price:</strong> ₹55</p>
+      <p><strong>Availability:</strong> <span class="in-Stock">In Stock</span></p>
+      <button class="add-to-cart">Add to cart</button>
+    </article>
+
+    <article>
+      <img src="./melon.jpg" width="200" alt="Melon" />
+      <h2 class="product-title">Melon</h2>
+      <p>1.5kg - 2kg</p>
+      <p><strong>Price:</strong> ₹40</p>
+      <p><strong>Availability:</strong> <span class="out-of-stock">Out of Stock</span></p>
+      <button class="add-to-cart" disabled>Add to cart</button>
+    </article>
+  </section>
+
+  <div id="cart"
+    style="position: fixed; top: 10px; right: 10px; background: #444; color: white; padding: 8px 12px; border-radius: 20px;">
+    Cart: <span id="cartCount">0</span>
+  </div>
+  <script src="./product.js"></script>
+</body>
+
+</html>
