@@ -78,6 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Filter buttons
   const filterContainer = document.createElement("div");
   filterContainer.style.margin = "20px";
+  filterContainer.style.width = "20%";
   filterContainer.innerHTML = `
     <button data-filter="all">All</button>
     <button data-filter="fruits">Fruits</button>
